@@ -5,7 +5,7 @@ import HeaderRight from './HeaderRight'
 
 const Header = memo(() => {
   return (
-    <div className='flex items-center h-20 border-b'>
+    <div className="flex items-center h-20 border-b">
       <HeaderLeft />
       <HeaderCenter />
       <HeaderRight />

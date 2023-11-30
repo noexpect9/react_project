@@ -1,28 +1,30 @@
-import axios from "axios"
+import axios from 'axios'
 import { BASE_URL, TIMEOUT } from './config'
+
 class Request {
   constructor(baseURL, timeout) {
     this.instance = axios.create({
       baseURL,
-      timeout
+      timeout,
     })
-    this.instance.interceptors.response.use(res => {
+    this.instance.interceptors.response.use((res) => {
       return res.data
-    }, err => {
+    }, (err) => {
       return err
     })
   }
+
   request(config) {
     return this.instance.request(config)
   }
+
   get(config) {
     return this.request({ ...config, method: 'get' })
   }
+
   post(config) {
     return this.request({ ...config, method: 'post' })
   }
 }
 
-
-// eslint-disable-next-line import/no-anonymous-default-export
 export default new Request(BASE_URL, TIMEOUT)

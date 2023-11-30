@@ -1,7 +1,7 @@
-import request from "../request"
+import request from '../request'
 
 export function getHomeGoodData() {
   return request.get({
-    url: '/home/goodprice'
+    url: '/home/goodprice',
   })
 }
