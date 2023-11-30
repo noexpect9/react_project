@@ -1,5 +1,6 @@
 import React, { memo, useEffect } from 'react'
 import request from '@/services'
+import HomeBanner from './HomeBanner'
 
 const Home = memo(() => {
   useEffect(() => {
@@ -10,7 +11,8 @@ const Home = memo(() => {
     })
   }, [])
   return (
-    <div className='flex justify-center items-center'>
+    <div>
+      <HomeBanner />
     </div>
   )
 })
