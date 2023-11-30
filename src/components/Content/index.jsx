@@ -6,9 +6,8 @@ const Content = memo((props) => {
   return (
     <div className="mt-5 cursor-pointer">
       <h1 className="text-3xl font-bold">{title}</h1>
-      {subTitle &&
-        <div className="mt-2 text-xl">{subTitle}</div>
-      }
+      {subTitle
+      && <div className="mt-2 text-xl">{subTitle}</div>}
     </div>
   )
 })
