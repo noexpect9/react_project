@@ -23,6 +23,9 @@ const Home = memo(() => {
       <div className="w-[1032px] mx-auto">
         <Content title={goodPriceInfo.title} />
         { goodPriceInfo.list && <RoomItem itemData={goodPriceInfo.list} />}
+        { goodPriceInfo.list && <RoomItem itemData={goodPriceInfo.list} />}
+        { goodPriceInfo.list && <RoomItem itemData={goodPriceInfo.list} />}
+        { goodPriceInfo.list && <RoomItem itemData={goodPriceInfo.list} />}
         {/* <RoomItem itemData={goodPriceInfo.list} /> */}
       </div>
     </div>
